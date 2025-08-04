@@ -24,13 +24,19 @@ class UIVariables:
         }
     def return_text(self):
         return self.text
+
     def return_sidebar_text(self):
         return self.sidebar_text
+    
+    def return_value(self, key):
+        return self.text.get(key, None)
+
     def alter_text(self, key, value):
         if key in self.text:
             self.text[key] = value
         else:
             raise KeyError(f"Key '{key}' not found in text dictionary.")
+    
     def alter_sidebar_text(self, key, value):
         if key in self.sidebar_text:
             self.sidebar_text[key] = value
