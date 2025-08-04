@@ -1,11 +1,10 @@
 import streamlit as st
-class StreamlitInterface:
+class StreamlitUI:
     def __init__(self):
-        st.sidebar.title("Streamlit Interface")
-        
+        st.sidebar.title("Streamlit UI")
 
-    def display_interface():
-        st.title("Welcome to the Streamlit Interface")
+    def display_interface(self):
+        st.title("Welcome to the StreamliStreamlitInterfacet UI")
         st.write("This is a simple interface built with Streamlit.")
         
         user_input = st.text_input("Enter some text:")
