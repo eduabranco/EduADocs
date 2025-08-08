@@ -46,4 +46,4 @@ class StreamlitUI:
         
         st._bottom.selectbox('🗣️🌐', ['English','Português', 'Español', 'Français','日本語','普通话','Русский','हिंदी'])
 if __name__ == "__main__":
-    StreamlitUI()
+    ui = StreamlitUI()
