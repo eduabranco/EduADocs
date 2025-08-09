@@ -45,5 +45,6 @@ class StreamlitUI:
             st.form_submit_button("Submit")
         
         st._bottom.selectbox('🗣️🌐', ['English','Português', 'Español', 'Français','日本語','普通话','Русский','हिंदी'])
+
 if __name__ == "__main__":
     ui = StreamlitUI()
