@@ -400,4 +400,4 @@ This concludes the simulated draft content.
         st.session_state.generation_step = "input"
 
 if __name__ == "__main__":
-    StreamlitUI()
+    ui = StreamlitUI()
