@@ -67,7 +67,7 @@ class StreamlitUI:
         # Provider-specific settings
         if provider == LLMProvider.OPENAI.value:
             st.sidebar.text_input("OpenAI API Key:", type="password", key="openai_key")
-            st.sidebar.selectbox("Model:", ["gpt-4", "gpt-3.5-turbo"], key="openai_model")
+            st.sidebar.selectbox("Model:", ["gpt-5-nano", "gpt-5-mini"], key="openai_model")
         elif provider == LLMProvider.GOOGLE.value:
             st.sidebar.text_input("Google API Key:", type="password", key="google_key")
             st.sidebar.selectbox("Model:", ["gemini-pro", "gemini-pro-vision"], key="google_model")
